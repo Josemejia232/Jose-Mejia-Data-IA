@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: #0f172a;
+  --color-surface: #1e293b;
+  --color-accent: #3b82f6;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-border: #334155;
+  
+  --color-brand-400: #3b82f6; /* Map to accent for compatibility */
+  --color-brand-500: #2563eb;
+  --color-brand-600: #1d4ed8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[var(--color-bg)] text-[var(--color-text-primary)] antialiased font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight text-[var(--color-text-primary)];
+  }
+}
+
+.glass-panel {
+  @apply bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-[var(--color-text-secondary)];
+}
+
+.card-step {
+  @apply text-xs flex font-bold text-[var(--color-accent)] uppercase mb-3 tracking-[0.1em];
+}
+
+.contact-tag {
+  @apply bg-[rgba(59,130,246,0.1)] border border-[var(--color-accent)] text-[var(--color-accent)] px-4 py-2 rounded-full text-sm font-semibold transition-colors hover:bg-[rgba(59,130,246,0.2)];
+}
