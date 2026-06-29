@@ -14,10 +14,10 @@ export default function Hero() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--color-border)] text-[var(--color-accent)] text-sm font-medium mb-8 bg-[rgba(59,130,246,0.05)]">
             <BrainCircuit size={16} />
-            <span>Soluciones Empresariales con IA</span>
+            <span>Consultoría y Soluciones Empresariales</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-[1.1] text-gradient">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 leading-[1.15] text-gradient">
             Transformamos Complejidad en <br className="hidden md:block" />
             Ventaja Competitiva
           </h1>
