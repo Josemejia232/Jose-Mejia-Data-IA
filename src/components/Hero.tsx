@@ -23,7 +23,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-xl text-[var(--color-text-secondary)] mb-10 max-w-2xl mx-auto leading-relaxed">
-            Aplicamos Inteligencia Artificial, Analítica de Datos avanzada y diseño de producto para optimizar procesos comerciales y escalar resultados.
+            Aplicamos Inteligencia de negocio, Analítica de Datos avanzada y diseño de producto para optimizar procesos comerciales y escalar resultados.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
